@@ -14,14 +14,14 @@ const itActsAsFavoriteRestaurantModel = (favoriteRestaurant) => {
   it('should refuse a restaurant from being added if it does not have the correct property', async () => {
     favoriteRestaurant.putRestaurant({ aProperty: 'property' });
 
-    expect(await favoriteRestaurant.getAllRestaurants())
+    expect(await favoriteRestaurant.getAllRestaurant())
       .toEqual([]);
   });
 
   it('can return all of the restaurants that have been added', async () => {
     favoriteRestaurant.putRestaurant({ id: 1 });
     favoriteRestaurant.putRestaurant({ id: 2 });
-    expect(await favoriteRestaurant.getAllRestaurants())
+    expect(await favoriteRestaurant.getAllRestaurant())
       .toEqual([
         { id: 1 },
         { id: 2 },
@@ -34,7 +34,7 @@ const itActsAsFavoriteRestaurantModel = (favoriteRestaurant) => {
     favoriteRestaurant.putRestaurant({ id: 3 });
 
     await favoriteRestaurant.deleteRestaurant(1);
-    expect(await favoriteRestaurant.getAllRestaurants())
+    expect(await favoriteRestaurant.getAllRestaurant())
       .toEqual([
         { id: 2 },
         { id: 3 },
@@ -46,7 +46,7 @@ const itActsAsFavoriteRestaurantModel = (favoriteRestaurant) => {
     favoriteRestaurant.putRestaurant({ id: 3 });
 
     await favoriteRestaurant.deleteRestaurant(4);
-    expect(await favoriteRestaurant.getAllRestaurants())
+    expect(await favoriteRestaurant.getAllRestaurant())
       .toEqual([
         { id: 1 },
         { id: 2 },
