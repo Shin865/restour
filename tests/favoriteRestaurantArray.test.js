@@ -12,7 +12,7 @@ const FavoriteRestaurantArray = {
     return favoriteRestaurants.find((restaurant) => restaurant.id === id);
   },
 
-  getAllRestaurants() {
+  getAllRestaurant() {
     return favoriteRestaurants;
   },
 
