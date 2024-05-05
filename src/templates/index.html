@@ -1,0 +1,75 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#DB0000"/>
+
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="manifest" href="./app.webmanifest">
+  <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"> 
+  <title>ResTour Blog</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip To Content</a>
+  <header class="header">
+    <div class="header_title">
+      <a href="/"><h2>ResTour</h2></a>
+    </div>
+    <button id="menu" class="header_menu">☰</button>
+    <nav id="drawer" class="nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="/">Home</a></li>
+        <li class="nav_item"><a href="#/like">Favorite</a></li>
+        <li class="nav_item"><a href="https://github.com/Shin865">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main id="main" tabindex="0">
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 400px)" srcset="../images/heros/hero-small.jpg" type="image/jpg">
+        <img src="../images/heros/hero-large.jpg" alt="Hero Image">
+      </picture>
+      <div class="hero-inner">
+        <h1 class="hero-title">Temukan Restaurant Favoritmu</h1>
+        <p class="hero-tagline">
+          Jelajahi berbagai macam restoran terbaik di Indonesia, dan rasakan pengalaman terbaikmu
+        </p>
+      </div>
+    </div>
+   <section class="content">
+      <div class="boarding">
+      <article class="headline">
+        <figure class="headline_figure">
+          <img src="https://www.fluentu.com/blog/english/wp-content/uploads/sites/4/2018/02/talking-about-food-in-english.jpg" alt="Explore Restaurant" />
+          <figcaption>ResTour, 2024k Members</figcaption>
+        </figure>
+        <div class="headline_content">
+          <h1 class="headline_title">#ResTour : Find Your Favorite Restaurant</h1>
+          <p class="headline_description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eum
+            facere nostrum officiis qui quidem ratione similique, soluta veniam
+            voluptatum. Accusantium ad amet asperiores, aut commodi corporis dicta
+            distinctio ducimus expedita itaque laudantium magnam maiores, nobis
+            obcaecati officiis provident quasi qui quos repellat rerum saepe sint soluta
+            veniam vero vitae, voluptas voluptate voluptatem. Esse nobis non nulla optio
+            vero. Laudantium!
+          </p>
+          <button class="headline_button">Read More</button>
+        </div>
+      </article>
+    </div>
+  </section>
+  <div id="mainContent"></div>
+  </main>
+
+  <footer>
+    <p>| Copyright © 2024 - ResTour |</p>
+  </footer>
+</body>
+</html>
