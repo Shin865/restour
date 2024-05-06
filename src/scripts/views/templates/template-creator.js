@@ -32,7 +32,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 const createRestaurantItemTemplate = (restaurant) => `
 <div class="restaurant-item">
     <div class="restaurant-item_header">
-        <img  class="restaurant-item_thumbnail lazyload" data-src="${CONFIG.BASE_IMAGE_LARGE_URL + restaurant.pictureId}" alt="${restaurant.name}">
+        <img  class="restaurant-item_thumbnail lazyload" data-src="${CONFIG.BASE_IMAGE_LARGE_URL + restaurant.pictureId}" alt="${restaurant.name || '-'}">
     <div class="restaurant-item_rating">
         <p>⭐️<span class="restaurant-item_rating_score">${restaurant.rating}</span></p>
     </div>
